@@ -1,20 +1,18 @@
-import java.util.Scanner;
-public class pali
-{
-public static void main(String args[])
-{
-Scanner s=new Scanner(System.in);
-int a=s.nextInt();
-int b=0,c,d;
-d=a;
-   while( a != 0 )
-      {
-          c = a % 10;
-          b = b * 10+c;
-          a = 10;
-      }
-if(d==b)
- System.out.println("yes");
-else
- System.out.println("no");
-}}
+import java.util.*;   
+public class palin 
+
+{  
+   public static void main(String args[])  
+   {  
+      String original, reverse = "";   
+      Scanner in = new Scanner(System.in);   
+      original = in.nextLine();   
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      if (original.equals(reverse))  
+         System.out.println("yes");  
+      else  
+         System.out.println("no");   
+   }  
+}  
